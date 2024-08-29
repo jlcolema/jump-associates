@@ -1,0 +1,5 @@
+.DS_Store
+src
+wp-config*
+*.sql
+backupwordpress*

@@ -1,0 +1,257 @@
+
+/*-------------------------------------------
+	Footer
+-------------------------------------------*/
+
+
+#footer {
+
+	padding: 30px 0;
+	color: $gray;
+	background: $white;
+	border-top: 1px solid $light-gray;
+
+	@media screen and (min-width: 640px) {
+
+		padding: 30px 0 5px 0;
+
+	}
+
+	.wrap {
+
+		@media screen and (min-width: 640px) {
+
+			@include placeholder;
+			text-align: justify;
+
+		}
+
+	}
+
+		.inquiries {
+
+			@media screen and (min-width: 380px) {
+
+				@include group;
+
+			}
+
+			@media screen and (min-width: 640px) {
+
+				display: inline-block;
+				width: 31.5%;
+				width: calc(33.33333% - 20px);
+				text-align: left;
+				vertical-align: top;
+
+			}
+
+		}
+
+			.inquiry {
+
+				margin-bottom: 25px;
+
+				@media screen and (min-width: 380px) {
+
+					float: left;
+					margin-right: 40px;
+
+				}
+
+				@media screen and (min-width: 640px) {
+
+					float: none;
+					margin-right: 0;
+
+				}
+
+				&:last-of-type {
+
+					@media screen and (min-width: 380px) {
+
+						margin-right: 0;
+
+					}
+
+				}
+
+				h4 {
+
+					margin-top: 0;
+					margin-bottom: (10/16) + em;
+					@include font-size(16);
+					line-height: (25/16) + em;
+					font-weight: bold;
+
+					a {
+
+						color: $gray;
+						text-decoration: none;
+						@include transition(color 0.35s);
+
+						&:hover {
+
+							color: $orange;
+
+						}
+
+					}
+
+				}
+
+				.fn {}
+
+				.tel {
+
+					a {
+
+						color: $gray;
+						text-decoration: none;
+
+						&:hover {}
+
+					}
+
+				}
+
+				.form {}
+
+			}
+
+			.subscribe {
+
+				@media screen and (min-width: 380px) {
+
+					clear: both;
+
+				}
+
+				p {
+
+					font-weight: bold;
+
+					@media screen and (min-width: 640px) {
+
+						margin-bottom: 0;
+
+					}
+
+					a {
+
+						color: $gray;
+						text-decoration: none;
+						@include transition(color 0.35s);
+
+						&:hover {
+
+							color: $orange;
+
+						}
+
+					}
+
+				}
+
+				.form {}
+
+			}
+
+		.address {
+
+			@media screen and (min-width: 640px) {
+
+				display: inline-block;
+				width: 31.5%;
+				width: calc(33.33333% - 20px);
+				text-align: left;
+				vertical-align: top;
+
+			}
+
+			.n {
+
+				margin-top: 0;
+				margin-bottom: (10/16) + em;
+				@include font-size(16);
+				line-height: (25/16) + em;
+				font-weight: bold;
+
+			}
+
+			.adr {}
+
+				.street {}
+
+				.suite {}
+
+				.locality {}
+
+				.region {}
+
+				.postal-code {}
+
+			.tel {
+
+				a {
+
+					color: $gray;
+					text-decoration: none;
+
+					&:hover {}
+
+				}
+
+			}
+
+		}
+
+		.mission {
+
+			@media screen and (min-width: 640px) {
+
+				display: inline-block;
+				width: 31.5%;
+				width: calc(33.33333% - 20px);
+				text-align: left;
+				vertical-align: top;
+
+			}
+
+			.statement {
+
+				p {
+
+					font-weight: bold;
+
+					&:first-of-type {
+
+						@media screen and (min-width: 640px) {
+
+							margin-top: 0;
+
+						}
+
+					}
+
+					&:last-of-type {
+
+						margin-bottom: (12/16) + em;
+
+					}
+
+				}
+
+			}
+
+			#copyright {
+
+				margin: 0;
+				@include font-size(12);
+				line-height: (18/12) + em;
+
+			}
+
+		}
+
+}
